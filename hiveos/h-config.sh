@@ -6,5 +6,5 @@
 
 [[ -z $CUSTOM_CONFIG_FILENAME ]] && echo -e "${RED}No CUSTOM_CONFIG_FILENAME is set${NOCOLOR}" && return 1
 
-conf="--url ${CUSTOM_URL} --user ${CUSTOM_TEMPLATE} --pass ${CUSTOM_PASS} ${CUSTOM_USER_CONFIG}"
+conf="--url ${CUSTOM_URL} --user ${CUSTOM_TEMPLATE} --pass ${CUSTOM_PASS} ${CUSTOM_USER_CONFIG} --api-port 60050"
 echo "$conf" > $CUSTOM_CONFIG_FILENAME
